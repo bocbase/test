@@ -1,0 +1,40 @@
+// Place all the styles related to the lives controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.title-live{
+    margin:0 0 10px 0;
+    font-size:21px;
+}
+.space-contents{
+    height:25px;
+}
+
+.live-date{
+    margin:0 0 auto 0;
+    line-height:23px;
+    float:left;
+}
+
+.btn-setlist-on,.btn-setlist-off{
+    width:80px;
+    height:22px;
+    line-height:22px;
+    font-size:11px;
+    text-align:center;
+    float:right;
+    border-radius:3px;
+    border-width:1px;
+    border-style:solid;
+    margin:0px 0 auto 0;
+}
+.btn-setlist-on{color:#FFF;background:#427db4;border-color:#427db4;}
+.btn-setlist-off{color:#FFF;background:#ccc;border-color:#ccc;}
+
+
+.articl-live{
+  width:960px;
+    margin:0;
+  padding:15px;
+    overflow:hidden;
+}

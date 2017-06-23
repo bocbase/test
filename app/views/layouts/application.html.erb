@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bocbase</title>
+    <%= csrf_meta_tags %>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+  
+    <div id="small-header-bg" class="visible-md visible-lg"></div>
+    <div class="container">
+          <div id="small-header" class="visible-md visible-lg">
+        <div id="small-logo">BOC BASE</div>
+        <nav id="global-nav-small">
+          <ul>
+              <li><a href="../history/" class="global-nav-history-small">HISTORY</a></li>
+              <li><a href="../live/" class="global-nav-live-small">LIVE</a></li>
+              <li><a href="../magazine/" class="global-nav-magazine-small">MAGAZINE</a></li>
+              <li><a href="../goods/" class="global-nav-goods-small">GOODS</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="header" class="visible-md visible-lg">
+        <div class="logo">BOC BASE</div>
+        <nav id="global-nav">
+          <ul>
+              <li><a href="../history/" class="global-nav-history">HISTORY</a></li>
+              <li><a href="../live/" class="global-nav-live">LIVE</a></li>
+              <li><a href="../magazine/" class="global-nav-magazine">MAGAZINE</a></li>
+              <li><a href="../goods/" class="global-nav-goods">GOODS</a></li>
+          </ul>
+        </nav>
+       </div>
+    </div>
+    <div>
+      <%= yield %>
+    </div>
+
+    <div id="btn-scroll-top"></div>
+    <div id="footer"></div>
+  </body>
+</html>

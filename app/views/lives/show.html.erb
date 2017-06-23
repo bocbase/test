@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ymd:</strong>
+  <%= @live.ymd %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @live.title %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @live.text %>
+</p>
+
+<%= link_to 'Edit', edit_live_path(@live) %> |
+<%= link_to 'Back', lives_path %>

@@ -1,0 +1,32 @@
+<%= form_for(live) do |f| %>
+  <% if live.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(live.errors.count, "error") %> prohibited this live from being saved:</h2>
+
+      <ul>
+      <% live.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ymd %>
+    <%= f.date_select :ymd %>
+  </div>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :text %>
+    <%= f.text_field :text %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

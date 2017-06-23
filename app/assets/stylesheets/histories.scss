@@ -1,0 +1,86 @@
+// Place all the styles related to the histories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+#nav-year{
+    box-sizing:border-box;
+    width:760px;
+    height:54px;
+    padding:0;
+    position: absolute;
+    top: 50%;
+    left: 261;
+    right: 0;
+    bottom: 0;
+    margin-top: -36px;
+}
+#nav-year ul li a,#nav-year ul li span{
+    display:block;
+    width:auto;
+    height:27px;
+    padding:5px 10px;
+    margin:5px;
+    font-size:12px;
+    float:left;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.year-tag,.year-tag-current{
+    cursor: pointer;
+}
+.year-tag-current{
+    color:#FFF;
+    background:#c96059;
+}
+.year-tag-current:visited{ color: #FFF; }
+
+.year-tag:hover,.year-tag-current:hover{
+    color:#FFF;
+    background-color:#ECB935;
+}
+
+.category{
+    width:80px;
+    height:22px;
+    line-height:22px;
+    font-size:11px;
+    text-align:center;
+    float:left;
+    border-radius:3px;
+    border-width:1px;
+    border-style:solid;
+    margin:15px 0;
+}
+.news1 , .news2 , .news3 , .news4 ,  .news5 , .news6 , .news7 , .news8{
+    color:#FFF;
+}
+.news0{background:#FFFFFF;border-color:#666666;color:#666;}/*シングル*/
+.news1{background:#e7995a;border-color:#e7995a;}/*シングル#FBA848*/
+.news2{background:#e7995a;border-color:#e7995a;}/*アルバム*/
+.news3{background:#e7995a;border-color:#e7995a;}/*VIDEO*/
+.news4{background:#427db4;border-color:#427db4;}/*LIVE#40AAEF*/
+.news5{background:#78b05c;border-color:#78b05c;}/*TV#78b05c*/
+.news6{background:#78b05c;border-color:#78b05c;}/*RADIO*/
+.news7{background:#74bfdb;border-color:#74bfdb;}/*雑誌#F27398*/
+.news8{background:#c96059;border-color:#c96059;}/*BIRTH DAY#FF6860*/
+
+
+
+.history-date{
+    line-height:23px;
+    float:left;
+    margin:0;
+    padding:15px 0;
+}
+.history-text{
+    line-height:23px;
+    padding:15px 0;
+}

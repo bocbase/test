@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ymd: 2017-06-14
+  category: 1
+  text: MyString
+
+two:
+  ymd: 2017-06-14
+  category: 1
+  text: MyString

@@ -1,0 +1,45 @@
+<div class="container">
+    <div id="topImg"><%= image_tag 'history.jpg' %></div>
+    <div id ="contentsHeader" class="visible-md visible-lg">
+        <div id ="contentsTitle">LIVE</div>
+        <div id ="contentsTitleLine"></div>
+        <nav id ="nav-year">
+            <ul>
+                <% @nav_year_list.each do |targetYear| %>
+                    <li><a href="<%= targetYear[0] %>" id="year-<%= targetYear[0] %>" class="year-tag"><%= targetYear[0] %></a></li>
+                <% end %>
+            </ul>
+        </nav>
+    </div>
+    <div id ="contentsTop"></div>
+    <% i=0 %>
+    <% @events.each do |event| %>
+
+        
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title-live"><%= event.title %></div>
+        </div>
+        <div class="row">
+            <% @ccc.each do |live| %>
+                <% if event.id == live[0] %>
+                    <div class="content">
+                        <div class="articl-live">
+                            <div class="live-date"><%= changeFormatDate(live[2]) %> <%= getJapaneseDayOfTheWeek(live[2]) %>　　　<%= live[3] %></div>
+                            <% if live[4] > 0 %>
+                                <div class="btn-setlist-on">SET LIST</div>
+                            <% else %>
+                                <div class="btn-setlist-off">SET LIST</div>
+                            <% end %>
+                        </div>
+                    </div>
+                    <div class="line-contents"></div>
+                    <% i=i+1 %>
+                <% end %>
+            <% end %>
+        </div>
+        
+        <div class="space-contents"></div>
+    <% end %>
+　  <div id ="btn-scroll-contentsNav"></div>
+</div>

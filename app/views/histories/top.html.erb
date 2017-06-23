@@ -1,0 +1,32 @@
+<div class="container">
+    <%= image_tag 'history.jpg' %>
+    <div id ="contentsHeader" class="visible-md visible-lg">
+        <div id ="contentsTitle">HISTORY</div>
+        <div id ="contentsTitleLine"></div>
+        <nav id ="nav-year">
+            <ul>
+                <% @nav_year_list.each do |targetYear| %>
+                    <li><a href="<%= targetYear[0] %>" id="year-<%= targetYear[0] %>" class="year-tag"><%= targetYear[0] %></a></li>
+                <% end %>
+            </ul>
+        </nav>
+    </div>
+    <div id ="contentsTop"></div>
+    <% i=0 %>
+    <% @histories.each do |history| %>
+        
+        <div class="row">
+            <div class="content">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="history-date"><%= changeFormatDate(history.ymd) %> <%= getJapaneseDayOfTheWeek(history.ymd) %>　　　</div>
+                    <div class="category <%= categoryColor history.category %>"><%= categoryText history.category %></div>
+                </div>
+                <div class="col-xs-12 ccol-sm-12 col-md-8 col-lg-8 history-text"><%= history.text %></div>
+            </div>
+        </div>
+        
+        <div class="line-contents"></div>
+        <% i=i+1 %>
+    <% end %>
+　  <div id ="btn-scroll-contentsNav"></div>
+</div>
